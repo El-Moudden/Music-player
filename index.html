@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  
+
+  <title>Music Player</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="./images/Linkin-Park-Numb-4K-video.jpg" >
+    </div>
+
+    <div class="title-heart">
+      <div class="title">
+        <h1>Castle Of Glass</h1>
+        <p>Linkin Park</p>
+      </div>
+      <!-- <i class="fa-regular fa-heart"></i> -->
+      <div class="heart">
+        <div class="h1-h2" >
+          <div id="h1" onclick="red()"></div>
+          <div id="h2" onclick="red()"></div>
+        </div>
+        <div id="h3" onclick="red()"></div>
+      </div>
+    </div>
+
+    <audio controls id="track">
+      <source src="./images/CASTLE OF GLASS [Official Music Video] - Linkin Park(MP3_320K).mp3" type="audio/mpeg">
+    </audio>
+    <div class="range" >
+      <input type="range" id="range" value="0" >
+
+    </div>
+
+    <div class="controls">
+      <i class="fa-solid fa-forward back" style="rotate: 180deg;"  ></i>
+      <i class="fa-solid fa-pause" id="playPause" onclick="playPause()"></i>
+      <i class="fa-solid fa-forward next"></i>
+    </div>
+    
+
+  </div>
+
+  <script src="main.js"></script>
+  
+</body>
+</html>

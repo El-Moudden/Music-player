@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(45deg , #CF0140 , #A60134);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container {
+  width: 300px;
+  height: 500px;
+  background-image: linear-gradient(45deg , #FFE9E3 , #D78A99);
+  border-radius: 15px;
+}
+
+.logo {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  margin-top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+
+.logo img {
+  height: 100%;
+  border-radius: 50%;
+
+}
+.title h1 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #3B0144;
+  margin-bottom: 7px;
+  
+}
+.title p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #C499AC;
+}
+
+.title-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:300px 25px 30px ;
+}
+.range {
+  margin: 0 25px;
+
+}
+
+input {
+  -webkit-appearance: none;
+  background-color: #3B0144;
+  height: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  
+  width: 100%;
+}
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height:20px ;
+  border-radius: 50%;
+  background: #A60134;
+  border: 5px solid #C499AC;
+  
+}
+
+
+.controls {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  border-radius: 50%;
+  
+}
+
+.fa-play , .fa-pause {
+  color: hsl(333, 27%, 68%);
+  padding: 15px 17px;
+
+  background-color: #3B0144;
+  border-radius: 5px;
+  
+}
+.back , .next {
+  font-size: 20px;
+  color: #3B0144;
+  
+}
+#track {
+  display:none;
+}
+.fa-heart {
+  color: red;
+  
+}
+#h1 {
+  width: 20px;
+  height: 20px;
+  background-color: white ; 
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+#h2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white ;  
+  z-index: 2;
+  position: absolute;
+  left: 0;
+}
+.heart {
+  position: relative;
+  transform: scale(0.6);
+  
+}
+.h1-h2 {
+  width: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+}
+#h3 {
+  width: 20px;
+  height: 20px;
+  background-color: white ; 
+  position: absolute;
+  rotate: 45deg;
+  z-index: 3;
+  left: 4.85px;
+  top: 5.5px;
+  border-radius: 10px 10pxpx 0px 10px;
+
+}
+
